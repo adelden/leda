@@ -1,0 +1,48 @@
+.button {
+  font-family: inherit;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &-primary {
+    background-color: #3b82f6;
+    color: white;
+    &:hover:not(:disabled) { background-color: #2563eb; }
+  }
+
+  &-secondary {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    &:hover:not(:disabled) { background-color: #d1d5db; }
+  }
+
+  &-danger {
+    background-color: #ef4444;
+    color: white;
+    &:hover:not(:disabled) { background-color: #dc2626; }
+  }
+
+  &-sm { padding: 6px 12px; font-size: 14px; }
+  &-md { padding: 8px 16px; font-size: 16px; }
+  &-lg { padding: 12px 24px; font-size: 18px; }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &__loader {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.75s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

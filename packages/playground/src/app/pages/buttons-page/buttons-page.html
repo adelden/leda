@@ -1,24 +1,43 @@
 <!-- todo: default apply page classe on component and remove div -->
 <div class="page">
     <div class="container">
-        <app-button></app-button>
-        <app-button></app-button>
-        <app-button></app-button>   
+        <span>Default</span>
+
+        <div class="row">
+            <app-button [type]="'primary'" [size]="'lg'">Button</app-button>
+            <app-button [type]="'secondary'" [size]="'lg'">Button</app-button>
+            <app-button [type]="'danger'" [size]="'lg'">Button</app-button>   
+        </div>
+        <div class="row">
+            <app-button [type]="'primary'" [size]="'md'">Button</app-button>
+            <app-button [type]="'secondary'" [size]="'md'">Button</app-button>
+            <app-button [type]="'danger'" [size]="'md'">Button</app-button>    
+        </div>
+        <div class="row">
+            <app-button [type]="'primary'"  [size]="'sm'">Button</app-button>
+            <app-button [type]="'secondary'"  [size]="'sm'">Button</app-button>
+            <app-button [type]="'danger'"  [size]="'sm'">Button</app-button>     
+        </div>
+    </div>
+
+    <div class="container">
+        <span>Disabled</span>
+
+        <div class="row">
+            <app-button [type]="'primary'" [disabled]="true">Button</app-button>
+            <app-button [type]="'secondary'" [disabled]="true">Button</app-button>
+            <app-button [type]="'danger'" [disabled]="true">Button</app-button>
+        </div>
     </div>
     <div class="container">
-        <app-button></app-button>
-        <app-button></app-button>
-        <app-button></app-button>   
+        <span>Loading</span>
+
+        <div class="row">
+            <app-button [type]="'primary'" [loading]="true">Button</app-button>
+            <app-button [type]="'secondary'" [loading]="true">Button</app-button>
+            <app-button [type]="'danger'" [loading]="true">Button</app-button>
+        </div>
     </div>
-    <div class="container">
-        <app-button></app-button>
-        <app-button></app-button>
-        <app-button></app-button>   
-    </div>
-    <div class="container">
-        <app-button></app-button>
-        <app-button></app-button>
-        <app-button></app-button>   
-    </div>  
+    
 </div>
 
