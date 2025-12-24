@@ -1,0 +1,20 @@
+{
+  "name": "leda-workspace",
+  "version": "1.0.0",
+  "description": "Low-code Environment for Design-system Augmentation",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github-adelden:adelden/leda.git"
+  },
+  "scripts": {
+    "dev:leda": "npm run build:watch --workspace=leda",
+    "dev:playground": "npm start --workspace=playground",
+    "build:leda": "npm run build --workspace=leda"
+  },
+  "author": "Adel",
+  "license": "MIT"
+}

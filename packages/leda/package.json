@@ -1,0 +1,19 @@
+{
+  "name": "leda",
+  "version": "0.1.0",
+  "description": "Low-code Environment for Design-system Augmentation",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=17.0.0"
+  },
+  "devDependencies": {
+    "typescript": "~5.4.0",
+    "@types/node": "^20.0.0"
+  },
+  "license": "MIT"
+}
